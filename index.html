@@ -51,6 +51,24 @@
 
 
 
+	
+	
+	<form name="contact" netlify-honeypot="bot-field" method="POST" action="/feedback/success/index.html" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
+  <p class="u-visually-hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+  </p>
+  <label>What is your name?
+    <input name="full-name" type="text" placeholder="Your full name" required>
+  </label>
+  <label>What is your email address?
+    <input name="email-address" type="email" placeholder="Your email" required>
+  </label>
+  <label>What your message?
+    <textarea name="message" type="text" placeholder="Your message..." required></textarea>
+  </label>
+    <button type="submit">Submit</button>
+</form>
 
 </body>
 </html>
